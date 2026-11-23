@@ -1,0 +1,17 @@
+{
+  "name": "claim-research",
+  "version": "0.1.0",
+  "description": "Read completed research findings, exact source quotes, and saved conversation context from a run URL.",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Claim Research",
+    "shortDescription": "Findings and exact quotes by run URL",
+    "longDescription": "Connect your Claim Research account to read completed research runs. Paste a run URL to work with findings, exact source quotes, source links, and saved parent context. Requires an authorized account.",
+    "developerName": "The Legal Intelligence Company",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "defaultPrompt": [
+      "Use Claim Research to read this run and show an exact quote, its source link, and saved parent context: <run URL>"
+    ]
+  }
+}

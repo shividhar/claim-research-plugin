@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "claim_research": {
+      "type": "http",
+      "url": "https://claim-research-demo-api.onrender.com/mcp",
+      "scopes": ["research:read", "offline_access"],
+      "oauth": {
+        "clientId": "rGm1k7xes8j4ObXk",
+        "callbackUrl": "http://127.0.0.1/callback"
+      }
+    }
+  }
+}
