@@ -41,9 +41,10 @@ The login command resolves the plugin's bundled MCP configuration and opens
 browser sign-in. Keep the process running until sign-in completes. Tell the
 user when to restart Codex or start a new chat. Do not ask them to edit TOML,
 run keychain commands, or handle tokens. Keep sign-in URLs and tokens out of chat.
-Do not create a separate manual MCP entry. If a manual
-`claim_research` connection already exists, explain the duplicate and preserve
-it until the plugin connection has been verified; do not blindly delete it.
+Do not create a separate manual MCP entry. If a manual `claim_research` entry
+already exists, it overrides the plugin. After verifying plugin installation,
+back up that entry privately and use `codex mcp remove claim_research` to remove
+only that manual entry before login. Preserve all other settings and credentials.
 
 This repository contains only public plugin metadata and connection settings.
 The existing hosted MCP server enforces Clerk sign-in and reader authorization.
